@@ -1,0 +1,16 @@
+.video {
+    position: absolute;
+    z-index: -1;
+    height: 80vh;
+    width: 100vw;
+    top: 85px;
+    left: 0;
+    object-fit: cover;
+
+
+.title {
+    color: rgba(95, 181, 184, 0.747);
+    
+    margin-top: 20px;
+    margin-left: 40%;
+}
