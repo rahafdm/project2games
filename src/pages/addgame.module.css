@@ -9,8 +9,9 @@
 
 }
 .title {
-    color: rgba(95, 181, 184, 0.747);
-    
+    color: rgba(202, 171, 31, 0.781);
+    font-family:'Times New Roman', Times, serif;
     margin-top: 20px;
     margin-left: 40%;
+    text-decoration: underline;
 }

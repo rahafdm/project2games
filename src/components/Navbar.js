@@ -3,8 +3,7 @@ import { Container, Nav, Navbar } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import GamesContext from "../utils/GameContext"
 import styles from "./mystyle.module.css"
-// import { IoLogoGameControllerA } from "react-icons/cg";
-//import { BiGame } from "react-icons/bi";
+
 
 
 function NavbarItem() {

@@ -7,7 +7,6 @@ import SignUp from "./pages/SignUp"
 import Login from "./pages/Login"
 import GamesContext from "./utils/GameContext"
 import Profile from "./pages/Profile"
-import Foter from "./components/Foter"
 import WebFont from "webfontloader"
 import AddGame from "./pages/AddGame"
 import UsersGames from "./pages/UsersGames"
@@ -36,7 +35,7 @@ function App() {
   const handleCloseSignup = () => {
     setShowSignup(false)
   }
-
+//---------------------------------------------------- get API puplic ----------------------------------------------//
   const getGame1 = async () => {
     try {
       const response = await axios.get("https://free-to-play-games-database.p.rapidapi.com/api/games", {
@@ -50,6 +49,7 @@ function App() {
       console.log(error?.response?.data)
     }
   }
+  //--------------------------------------------------- get API privet --------------------------------------------//
 
   const getGame2 = async () => {
     try {
@@ -60,7 +60,7 @@ function App() {
       console.log(error.response.data)
     }
   }
-
+//----------------------------------------------------- get profile -----------------------------------------------//
   const getProfile = async () => {
     try {
       const response = await axios.get("https://vast-chamber-06347.herokuapp.com/api/user/me", {
@@ -86,6 +86,8 @@ function App() {
       },
     })
   }, [])
+
+  //-------------------------------------------------- add games ----------------------------------------------//
 
   const addGames = async e => {
     e.preventDefault()
@@ -113,12 +115,13 @@ function App() {
       console.log(error?.response?.data)
     }
   }
-
+//-----------------------------------------------------edit games -------------------------------------------//
   const editGames = e => {
     const id = e.target.id
     setEditId(id)
   }
 
+  //-------------------------------------------------- confirm -----------------------------------------------//
   const confirmGames = async (e, editId) => {
     e.preventDefault()
 
@@ -145,6 +148,7 @@ function App() {
     }
   }
 
+  //------------------------------------------------ delete games -------------------------------------------//
   const deleteGames = async id => {
     try {
       await axios.delete(`https://vast-chamber-06347.herokuapp.com/api/v2/games-719/items/${id}`, {
@@ -158,7 +162,7 @@ function App() {
       console.log(error.response.data)
     }
   }
-
+//--------------------------------------------------- signup ------------------------------------------------//
   const signUp = async e => {
     e.preventDefault()
     try {
@@ -176,7 +180,7 @@ function App() {
       console.log(error.response.data)
     }
   }
-
+//--------------------------------------------------- login ------------------------------------------------//
   const login = async e => {
     e.preventDefault()
     try {
@@ -195,7 +199,7 @@ function App() {
       console.log(error.response.data)
     }
   }
-
+//--------------------------------------------------- logout ---------------------------------------------//
   const logout = () => {
     localStorage.removeItem("tokenGame")
   }

@@ -22,12 +22,12 @@ function Profile() {
           <h2 className={styles.title4}>
             {profile.firstName} {profile.lastName}
           </h2>
-          <p className={styles.title4}>{profile.email}</p>
+          <p className={styles.title5}>{profile.email}</p>
         </Col>
       </Row>
       <Row md={4} sm={2} xs={1}></Row>
 
-      <Row>
+      <Row  xs={1} sm={2} md={3} className="g-4 mt-4">
         {profile.items.map(usergame => {
           return <UsersCardGames inProfile={true} usergame={usergame} editGames={editGames} deleteGames={deleteGames} />
         })}

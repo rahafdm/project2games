@@ -7,7 +7,7 @@ function SignUp() {
   const { signUp, signupshow, handleCloseSignup, handleOpenLogin } = useContext(GamesContext)
   return (
     <div style={{ borderRadius: "10%" }} className="ms-4 mt-4">
-      <Modal variant="" show={signupshow} onHide={handleCloseSignup}>
+      <Modal show={signupshow} onHide={handleCloseSignup}>
         <Form
           className={signandlog.log}
           onSubmit={e => {

@@ -16,27 +16,27 @@ function CarouselGames() {
             <Carousel.Item>
               <img className={styles.item} src={Game1} height="400px" alt="black survival" />
               <Carousel.Caption>
-                {/* <p > go ahead and play this GAME !! </p> */}
+               
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img className={styles.item} src={Game2} height="400px" alt="Heavy metal Machinse" />
 
               <Carousel.Caption>
-                {/* <p> signUP for more like this </p> */}
+               
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img className={styles.item} src={Game3} height="400px" alt="SpellsWorn" />
 
               <Carousel.Caption>
-                {/* <p> your world to finde new games </p> */}
+               
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img className={styles.item} src={Game4} height="400px" alt="Awosome Nuts" />
               <Carousel.Caption>
-                {/* <p> Happy game Happy Life </p> */}
+              
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>

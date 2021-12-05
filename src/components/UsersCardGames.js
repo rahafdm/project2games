@@ -20,14 +20,16 @@ function UsersCardGames(props) {
     <>
       <Col>
         <Card
+          className={styles.card}
           style={{
             width: "25rem",
             backgroundColor: "rgba(16, 167, 175, 0.301)",
             borderRadius: "10px",
             fontFamily: "Isemin",
+            height:"400px"
           }}
         >
-          <Card.Img style={{ borderRadius: "15px" }} variant="top" src={usergame.image} />
+          <Card.Img className={styles.img} style={{ borderRadius: "15px", height:"200px" }} variant="top" src={usergame.image} />
           <Card.Body>
             <Card.Title className={styles.title}>{usergame.title}</Card.Title>
             <Card.Text className={styles.text}>{usergame.description}</Card.Text>

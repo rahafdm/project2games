@@ -33,9 +33,21 @@ body {
     color: rgba(95, 181, 184, 0.747);
     text-align: center;
     margin-top: 20px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+   color:  rgba(202, 171, 31, 0.479) ;
 }
 .title4 {
     color: rgba(95, 181, 184, 0.747); 
+    transition: 1;
+}
+.title4:hover {
+    transform: translateY(-10%);
+}
+.title5 {
+    color: rgba(202, 171, 31, 0.479) ;
+    text-decoration: underline;
 }
 
 .navbar {
@@ -60,9 +72,7 @@ body {
     height: 300px;
     width: 300px;
     border-radius: 15px;
-    border: 4px solid rgba(95, 181, 184, 0.747);
-color: ;
-    
+    border: 4px solid rgba(95, 181, 184, 0.747);  
 }
 
 .par {
@@ -70,4 +80,22 @@ color: ;
     text-align: center;
     opacity: 50%;
     font-size: 18px;
+}
+
+
+.card {
+    transition: 0.8s;
+    box-shadow: 0 0 30px 2px rgba(250, 250, 250, 0.1) ;
+}
+
+.card:hover {
+    transform: translateY(-10%);
+}
+
+.img {
+    transition: 1s;
+}
+
+.img:hover {
+    transform: scale(1.1);
 }

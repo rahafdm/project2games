@@ -6,8 +6,10 @@ function DevolberCard(props) {
   const { game } = props
 
   return (
+   
     <Col>
       <Card
+      className={styles.card}
         style={{
           width: "25rem",
           backgroundColor: "rgba(16, 167, 175, 0.301)",
@@ -16,7 +18,7 @@ function DevolberCard(props) {
         }}
       >
         <Card.Body>
-          <Card.Img style={{ borderRadius: "15px" }} variant="top" src={game.thumbnail} />
+          <Card.Img className={styles.img} style={{ borderRadius: "15px" }} variant="top" src={game.thumbnail} />
           <Card.Body>
             <Card.Title className={styles.title}>{game.title}</Card.Title>
             <Card.Text className={styles.text}>{game.short_description}</Card.Text>
@@ -29,6 +31,7 @@ function DevolberCard(props) {
         </Card.Body>
       </Card>
     </Col>
+    
   )
 }
 

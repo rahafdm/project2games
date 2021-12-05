@@ -7,7 +7,7 @@ import styles from "./addgame.module.css"
 function AddGame() {
   const { addGames } = useContext(GamesContext)
   return (
-    <div className=" addgame">
+    <div>
       <video className={styles.video} src={video} autoPlay muted loop />
       <h1 className={styles.title}> ADD GAME </h1>
       <Form className="mt-5" onSubmit={addGames}>
